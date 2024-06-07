@@ -1,6 +1,7 @@
 # Hostify
-A simple deployment service for React applications, inspired by Vercel. Designed to make the deployment process easy and automated, from uploading your code to serving it live.
-
+- A simple deployment service for React applications, inspired by Vercel. Allowing user to deploy React JS applications by providing a GitHub repository URL.
+- Developed the backend in TypeScript, divided into three microservices: 
+    - Upload, Deploy, and Request Handler.
 ## Features
 
 ### Upload Service
@@ -31,6 +32,8 @@ A simple deployment service for React applications, inspired by Vercel. Designed
 - Node.js
 - AWS / Couldflare account
 - Redis
+
+
 ## Installation
 
 Clone the repository:
@@ -53,3 +56,19 @@ AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 REDIS_HOST=your_redis_host
 REDIS_PORT=your_redis_port
 ```
+## Run Locally
+
+
+Go to the any service directory
+
+```bash
+  cd deploy-service
+```
+
+Start the server
+
+```bash
+  npx tsc -b
+  node dist/index.js
+```
+
