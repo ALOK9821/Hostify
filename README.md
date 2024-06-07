@@ -31,4 +31,25 @@ A simple deployment service for React applications, inspired by Vercel. Designed
 - Node.js
 - AWS / Couldflare account
 - Redis
+## Installation
 
+Clone the repository:
+
+```bash
+  git clone https://github.com/yourusername/hostify.git
+    cd hostify
+```
+Install backend & frontend dependencies:
+```bash
+  cd backend
+    npm install
+  cd frontend
+    npm install
+```
+Set up environment variables:
+```bash
+AWS_ACCESS_KEY_ID=your_aws_access_key_id
+AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+REDIS_HOST=your_redis_host
+REDIS_PORT=your_redis_port
+```
